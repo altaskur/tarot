@@ -6,9 +6,9 @@ section.card-deck {
 
   & div.card {
     position: absolute;
-    width: 174px;
-    height: 255px;
-    border-radius: 5px;
+    width: var(--card-width);
+    height: var(--card-height);
+    border-radius: var(--card-border-radius);
     background: url("../../assets/img/card-back.png") no-repeat;
     background-size: 118% 108%;
     background-position: 50% 48%;

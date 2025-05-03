@@ -1,0 +1,16 @@
+section.card-selection-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8vw;
+  padding: 20px;
+  width: 100%;
+  height: max-content;
+
+  & div.card-slot {
+    border: 1px solid #ccc;
+    border-radius: var(--card-border-radius);
+    width: var(--card-width);
+    height: var(--card-height);
+  }
+}
