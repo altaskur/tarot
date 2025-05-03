@@ -1,0 +1,16 @@
+<section class="generalPrediction">
+
+  @if(loading){
+    <app-loading/>
+  }
+
+  @if(tarotDealer.isCardsMeaningsAvailable()){
+    @if(tarotIa.generalPrediction() ){
+      <div class="general-meaning">
+        <h2>Significado General</h2>
+        <p>{{ tarotIa.generalPrediction() }}</p>
+      </div>
+    }
+  }
+
+</section>

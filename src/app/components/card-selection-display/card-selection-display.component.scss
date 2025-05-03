@@ -1,0 +1,28 @@
+section.card-selection-display {
+  display: flex;
+  justify-content: center;
+  gap: 8vw;
+  padding: 20px;
+  width: 100%;
+  height: max-content;
+
+  & div.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    & div.card-slot {
+      border: 1px solid #cccccc12;
+      border-radius: var(--card-border-radius);
+      width: var(--card-width);
+      height: var(--card-height);
+      user-select: none;
+    }
+
+    & article.prediction {
+      width: 24vw;
+      text-wrap: white-space;
+    }
+  }
+}
