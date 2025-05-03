@@ -1,0 +1,39 @@
+section.card-deck {
+  position: relative;
+  transform: rotate(-3deg);
+
+  & div.card {
+    position: absolute;
+    width: 95px;
+    height: 138px;
+    border-radius: 5px;
+    background: url("../../assets/img/card-back.png") no-repeat;
+    background-size: 118% 108%;
+    background-position: 50% 48%;
+  }
+
+  & div.card:nth-child(1) {
+    transform: translate(2px, 2px);
+    z-index: 2;
+  }
+
+  & div.card:nth-child(2) {
+    transform: translate(3px, 3px);
+    z-index: 3;
+  }
+
+  & div.card:nth-child(3) {
+    transform: translate(4px, 4px);
+    z-index: 4;
+  }
+
+  & div.card:nth-child(4) {
+    transform: translate(5px, 5px);
+    z-index: 5;
+  }
+
+  & div.card:nth-child(5) {
+    transform: translate(6px, 6px);
+    z-index: 6;
+  }
+}
