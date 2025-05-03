@@ -50,7 +50,6 @@ export class TarotDealerService {
   }
 
   addPredictionToCard(card: Card, prediction: string) {
-    console.log({ card });
     const updatedCard = { ...card, prediction };
 
     this.shuffledDeck.set(
