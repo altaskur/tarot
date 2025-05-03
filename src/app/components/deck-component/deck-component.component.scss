@@ -1,11 +1,13 @@
 section.card-deck {
   position: relative;
+  width: 95px;
+  height: 138px;
   transform: rotate(-3deg);
 
   & div.card {
     position: absolute;
-    width: 95px;
-    height: 138px;
+    width: 174px;
+    height: 255px;
     border-radius: 5px;
     background: url("../../assets/img/card-back.png") no-repeat;
     background-size: 118% 108%;
