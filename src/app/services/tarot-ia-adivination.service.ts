@@ -38,6 +38,7 @@ export class TarotIaAdivinationService {
   }
 
   getGeneralMeaning(): Observable<string> {
+    this.generalPrediction.set('');
     const selectedCards = this.#tarotDealer.selectedCards();
     const prompt = `Eres un experto en tarot y conoces el Tarot de Isaac. Tu tarea es crear una predicción general muy breve basada en estas tres cartas: ${selectedCards
       .map((card) => `${card.name} (${card.position})`)

@@ -1,3 +1,24 @@
+section.card-wrapper {
+  position: absolute; /* Posicionamos las cartas de forma absoluta */
+  animation: cardAppear 0.8s ease-out forwards;
+
+  @keyframes cardAppear {
+    0% {
+      opacity: 0;
+      transform: translate(calc(-100vw + 20px), calc(100vh - 20px)) scale(0.8)
+        rotate(10deg);
+      transform-style: preserve-3d;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      transform: translate(0, 0) scale(1) rotate(0deg);
+      transform-style: preserve-3d;
+    }
+  }
+}
+
 section.card {
   width: var(--card-width);
   height: var(--card-height);
