@@ -1,0 +1,176 @@
+section.card {
+  width: var(--card-width);
+  height: var(--card-height);
+  border-radius: var(--card-border-radius);
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+
+  & div {
+    width: var(--card-width);
+    height: var(--card-height);
+    border-radius: var(--card-border-radius);
+    position: absolute;
+    backface-visibility: hidden;
+  }
+
+  & div.front {
+    transform: rotateY(180deg);
+    background: #ccc;
+    color: black;
+
+    &.number-0 {
+      background: url("../../assets/img/cards/00-el-glitch.webp") no-repeat;
+      background-size: 106% 103%;
+      background-position: 50% 48%;
+    }
+
+    &.number-1 {
+      background: url("../../assets/img/cards/01-el-mago-silencioso.webp")
+        no-repeat;
+      background-size: 110% 103%;
+      background-position: 50% 48%;
+    }
+
+    &.number-2 {
+      background: url("../../assets/img/cards/02-la-intuicion-compilada.webp")
+        no-repeat;
+      background-size: 107% 102%;
+      background-position: 50% 48%;
+    }
+
+    &.number-3 {
+      background: url("../../assets/img/cards/03-la-creatividad-institntiva.webp")
+        no-repeat;
+      background-size: 107% 100%;
+      background-position: 50% 48%;
+    }
+
+    &.number-4 {
+      background: url("../../assets/img/cards/04-el-sistema.webp") no-repeat;
+      background-size: 110% 105%;
+      background-position: 50% 48%;
+    }
+
+    &.number-5 {
+      background: url("../../assets/img/cards/05-el-mentor.webp") no-repeat;
+      background-size: 110% 105%;
+      background-position: 50% 48%;
+    }
+
+    &.number-6 {
+      background: url("../../assets/img/cards/06-la-bifurcacion.webp") no-repeat;
+      background-size: 110% 105%;
+      background-position: 50% 48%;
+    }
+
+    &.number-7 {
+      background: url("../../assets/img/cards/07-el-avance-sincrono.webp")
+        no-repeat;
+      background-size: 110% 105%;
+      background-position: 50% 48%;
+    }
+
+    &.number-8 {
+      background: url("../../assets/img/cards/08-la-integridad.webp") no-repeat;
+      background-size: 110% 105%;
+      background-position: 50% 48%;
+    }
+
+    &.number-9 {
+      background: url("../../assets/img/cards/09-el-retrio-activo.webp")
+        no-repeat;
+      background-size: 110% 105%;
+      background-position: 50% 48%;
+    }
+
+    &.number-10 {
+      background: url("../../assets/img/cards/10-el-ciclo.webp") no-repeat;
+      background-size: 110% 105%;
+      background-position: 50% 48%;
+    }
+
+    &.number-11 {
+      background: url("../../assets/img/cards/11-la-constancia-humana.webp")
+        no-repeat;
+      background-size: 110% 105%;
+      background-position: 50% 48%;
+    }
+
+    &.number-12 {
+      background: url("../../assets/img/cards/12-la-pausa-consciente.webp")
+        no-repeat;
+      background-size: 110% 105%;
+      background-position: 50% 48%;
+    }
+
+    &.number-13 {
+      background: url("../../assets/img/cards/13-la-refactorizacion.webp")
+        no-repeat;
+      background-size: 110% 105%;
+      background-position: 50% 48%;
+    }
+
+    &.number-14 {
+      background: url("../../assets/img/cards/14-el-equilibrio-lento.webp")
+        no-repeat;
+      background-size: 110% 105%;
+      background-position: 50% 48%;
+    }
+
+    &.number-15 {
+      background: url("../../assets/img/cards/15-el-exceso-productivo.webp")
+        no-repeat;
+      background-size: 110% 105%;
+      background-position: 50% 48%;
+    }
+
+    &.number-16 {
+      background: url("../../assets/img/cards/16-el-crash.webp") no-repeat;
+      background-size: 110% 105%;
+      background-position: 50% 48%;
+    }
+
+    &.number-17 {
+      background: url("../../assets/img/cards/17-la-vision-propia.webp")
+        no-repeat;
+      background-size: 110% 105%;
+      background-position: 50% 48%;
+    }
+
+    &.number-18 {
+      background: url("../../assets/img/cards/18-la-duda-persistente.webp")
+        no-repeat;
+      background-size: 110% 105%;
+      background-position: 50% 48%;
+    }
+
+    &.number-19 {
+      background: url("../../assets/img/cards/19-la-claridad.webp") no-repeat;
+      background-size: 110% 105%;
+      background-position: 50% 48%;
+    }
+
+    &.number-20 {
+      background: url("../../assets/img/cards/20-la-revision.webp") no-repeat;
+      background-size: 110% 105%;
+      background-position: 50% 48%;
+    }
+
+    &.number-21 {
+      background: url("../../assets/img/cards/21-la-integracion.webp") no-repeat;
+      background-size: 110% 105%;
+      background-position: 50% 48%;
+    }
+  }
+
+  & div.back {
+    background: url("../../assets/img/cards/card-back.webp") no-repeat;
+    background-size: 118% 108%;
+    background-position: 50% 48%;
+  }
+
+  &.flip {
+    transform: rotateY(180deg);
+  }
+}

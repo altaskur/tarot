@@ -13,15 +13,17 @@ main.tarot-table {
     border-radius: 18px;
 
     & section.deck {
+      position: absolute;
+      top: 62%;
       display: flex;
       align-items: flex-end;
-      padding-bottom: 18vh;
       padding-left: 3vw;
-      width: 21vw;
-      height: 100%;
     }
 
     & section.other {
+      display: flex;
+      flex-direction: column;
+      gap: 2vw;
       width: 100%;
       height: 100%;
     }
