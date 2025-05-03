@@ -27,8 +27,6 @@ export class CardSelectionDisplayComponent {
     card.flipped = true;
     this.cardLoading.set(card.number);
 
-    console.log('Card clicked:', card);
-
     this.loader.set(true);
     this.#tarotIa.getAdivinationCardMeaning(card).subscribe({
       next: (response) => {
